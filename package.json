@@ -1,0 +1,40 @@
+{
+  "name": "@baltazar-gr/react-lib",
+  "version": "1.0.0",
+  "description": "A simple react library",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md"
+  ],
+  "types": "dist/index.d.ts",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf dist",
+    "rollup-watch": "rollup -c -w",
+    "build": "npm run prebuild && rollup -c"
+  },
+  "keywords": [],
+  "author": "Baltazar Guerrero",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.26",
+    "react": "^18.2.0",
+    "rollup": "^3.9.1",
+    "rollup-plugin-dts": "^5.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
